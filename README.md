@@ -1,2 +1,2 @@
-# Intro-to-
-Face mask 
+# Intro-to-CS
+Face mask detection
