@@ -9,7 +9,7 @@ from Task1 import a
 class task2(task1):
     AIO_FEED_IDs = ["face-mask-check"]
     AIO_USERNAME = "Dungpq1401"
-    AIO_KEY = "aio_ticp30b2YyAS2dGRYLLzG4wkVJnl"
+    AIO_KEY = "aio_lkAs23Lfv5m7erwsP3C6rHt9ZFtL"
     def connected(self, client):
         print("Connect successfully ...")
         for feed in self.AIO_FEED_IDs:
@@ -35,7 +35,7 @@ class task2(task1):
 
     def __init__(self):
         super().__init__()
-        self.client = MQTTClient("Dungpq1401", "aio_ticp30b2YyAS2dGRYLLzG4wkVJnl")
+        self.client = MQTTClient("Dungpq1401", "aio_lkAs23Lfv5m7erwsP3C6rHt9ZFtL")
         self.client.on_connect = self.connected
         self.client.on_subscribe = self.subscribe
         self.client.on_message = self.message
